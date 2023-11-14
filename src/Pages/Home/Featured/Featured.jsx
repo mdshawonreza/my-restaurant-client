@@ -9,7 +9,7 @@ const Featured = () => {
                 subHeading={'Check it out'}
                 heading={'FROM OUR MENU'}
             ></SectionTitle>
-            <div className="md:flex justify-center items-center pb-20 pt-12 px-36 gap-8 bg-slate-900 opacity-60">
+            <div className="md:flex justify-center items-center pb-20 pt-12 px-36 gap-8 bg-black opacity-60">
                 <div>
                     <img  src={featuredImage} alt="" />
                 </div>
@@ -18,7 +18,7 @@ const Featured = () => {
                     <p className="uppercase">WHERE CAN I GET SOME?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptate facere, deserunt dolores maiores quod nobis quas quasi. Eaque repellat recusandae ad laudantium tempore consequatur consequuntur omnis ullam maxime tenetur.</p>
 
-                    <button className="btn btn-outline border-0 border-b-4">Order Now</button>
+                    <button className="btn btn-outline border-0 text-white border-b-4">Order Now</button>
                 </div>
             </div>
             

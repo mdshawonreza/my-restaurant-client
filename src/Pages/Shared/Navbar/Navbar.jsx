@@ -5,7 +5,7 @@ const Navbar = () => {
         <li><NavLink to={"/"} className="mr-3 hover:text-white">Home</NavLink></li>
         <li><NavLink to={"/login"} className="mr-3 hover:text-white">Login</NavLink></li>
         <li><NavLink to={"/menu"} className="mr-3 hover:text-white">Our Menu</NavLink></li>
-        <li><NavLink to={"/order"} className="mr-3 hover:text-white">Order Food</NavLink></li>
+        <li><NavLink to={"/order/salad"} className="mr-3 hover:text-white">Order Food</NavLink></li>
     </>
     return (
         <div className="navbar bg-black text-white fixed z-10 bg-opacity-25 max-w-[580px] md:max-w-3xl lg:max-w-6xl mx-auto">

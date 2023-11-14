@@ -8,9 +8,11 @@ import dessertImg from "../../../assets/menu/dessert-bg.jpeg"
 import pizzaImg from "../../../assets/menu/pizza-bg.jpg"
 import saladImg from "../../../assets/menu/salad-bg.jpg"
 import soupImg from "../../../assets/menu/soup-bg.jpg"
+import { useParams } from "react-router-dom";
 
 const Menu = () => {
     const [menu]=useMenu()
+    
     const offered=menu.filter(item=>item.category=== "offered")
     const desserts=menu.filter(item=>item.category=== "dessert")
     const pizza=menu.filter(item=>item.category=== "pizza")
@@ -35,13 +37,13 @@ const Menu = () => {
             {/* offered menu items */}
             <MenuCategory items={offered}></MenuCategory>
             {/* dessert menu items */}
-            <MenuCategory items={desserts} title="DESSERTS" coverImg={dessertImg} ></MenuCategory>
+            <MenuCategory items={desserts} title="dessert" coverImg={dessertImg} ></MenuCategory>
             {/*pizza menu items  */}
-            <MenuCategory items={pizza} title={"PIZZA"} coverImg={pizzaImg} ></MenuCategory>
+            <MenuCategory items={pizza} title={"pizza"} coverImg={pizzaImg} ></MenuCategory>
             {/*pizza menu items  */}
             <MenuCategory items={salad} title={"salad"} coverImg={saladImg} ></MenuCategory>
             {/*soup menu items  */}
-            <MenuCategory items={soup} title={"salad"} coverImg={soupImg} ></MenuCategory>
+            <MenuCategory items={soup} title={"soup"} coverImg={soupImg} ></MenuCategory>
            
         </div>
     );

@@ -1,4 +1,4 @@
-import { Parallax, Background } from 'react-parallax';
+import { Parallax} from 'react-parallax';
 const Cover = ({ img, title, description }) => {
     return (
         <Parallax
@@ -8,7 +8,7 @@ const Cover = ({ img, title, description }) => {
         strength={-200}
     >
        
-        <div className="hero h-[650px]" >
+        <div className="hero h-[600px]" >
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
                 <div className="max-w-md">
